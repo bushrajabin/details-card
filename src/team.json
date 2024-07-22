@@ -102,17 +102,5 @@
         "Name": "Charlotte Thomas"
       }
     ]
-  },
-  {
-    "Cleaning Team": [
-      {
-        "profile": "https://randomuser.me/api/portraits/men/8.jpg",
-        "Name": "David Kim"
-      },
-      {
-        "profile": "https://randomuser.me/api/portraits/women/9.jpg",
-        "Name": "Sophia Martinez"
-      }
-    ]
   }
 ]
