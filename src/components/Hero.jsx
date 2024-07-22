@@ -9,14 +9,13 @@ const Hero = () => {
           const teamType = Object.keys(data)[0];
           const members = data[teamType];
           return (
-            <div className="  text-center xl:flex xl:flex-row xl:flex-wrap xl:justify-center xl:m-auto xl:w-7/12 ">
+            <div className="  text-center xl:flex xl:flex-row xl:flex-wrap xl:m-auto xl:w-7/12 ">
               <div className="xl:flex xl:flex-row xl:justify-center xl:w-full xl:p-4">
                 <h1 className=" text-xl text-white font-mono xl:text-center ">
                   {teamType || "not availablee"}
                 </h1>
               </div>
 
-              {/* <div className="xl:bg-yellow-500 xl:flex xl:flex-row xl:overflow-x-scroll xl:w-9/12 "> */}
                 {members.map((member, idx) => {
                   const { profile, Name } = member;
 
