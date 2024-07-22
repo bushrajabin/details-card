@@ -9,30 +9,31 @@ const Hero = () => {
           const teamType = Object.keys(data)[0];
           const members = data[teamType];
           return (
-            <div className="  text-center xl:flex xl:flex-row xl:flex-wrap xl:justify-center  xl:w-7/12 xl:m-auto ">
+            <div className="  text-center xl:flex xl:flex-row xl:flex-wrap xl:justify-center xl:m-auto xl:w-7/12 ">
               <div className="xl:flex xl:flex-row xl:justify-center xl:w-full xl:p-4">
                 <h1 className=" text-xl text-white font-mono xl:text-center ">
                   {teamType || "not availablee"}
                 </h1>
               </div>
 
-              {members.map((member, idx) => {
-                const { profile, Name } = member;
+              {/* <div className="xl:bg-yellow-500 xl:flex xl:flex-row xl:overflow-x-scroll xl:w-9/12 "> */}
+                {members.map((member, idx) => {
+                  const { profile, Name } = member;
 
-                return (
-                  <div className=" p-2 xl:m-1 xl:p-0  ">
-                    <div className=" flex flex-col bg-white  items-center p-5 rounded-md xl:w-60 ">
-                      <img
-                        src={profile}
-                        alt=""
-                        className=" w-20 h-20 object-cover rounded-full xl:w-20 xl:rounded-full xl:h-20 xl:object-cover"
-                      />
-                      <h2 className="text-lg font-mono">{Name}</h2>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                  return (
+                  
+                      <div className=" flex flex-col bg-white  items-center m-2 p-4 xl:m-1 xl:p-3 rounded-md  xl:w-52  ">
+                        <img
+                          src={profile}
+                          alt=""
+                          className=" w-20 h-20 object-cover rounded-full xl:w-20 xl:rounded-full xl:h-20 xl:object-cover"
+                        />
+                        <h2 className="text-lg font-mono">{Name}</h2>
+                      </div>
+                  );
+                })}
+              </div>
+            // </div>
           );
         })}
       </div>
